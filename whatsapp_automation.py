@@ -17,12 +17,10 @@ grp_name.click()
 msg_box = browser.find_elements_by_class_name("_13NKt")
 
 
-status = 'y'
-while status =='y': 
-    for i in range(count):
-        msg_box[1].send_keys(msg)
-        time.sleep(delay)
-        button = browser.find_element_by_class_name('_4sWnG')
-        button.click()
 
-    status = input("press y to continue")
+for i in range(count):
+    msg_box[1].send_keys(msg)
+    time.sleep(delay)
+    button = browser.find_element_by_class_name('_4sWnG')
+    button.click()
+
